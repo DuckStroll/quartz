@@ -13,7 +13,8 @@ $$f(x,y,z)\to (\alpha _{1}x+\alpha _{2}y+\alpha _{3}z,
 \beta _{1}x+\beta _{2}y+\beta _{3}z,
 \gamma _{1}x+\gamma _{2}y+\gamma _{3}z) $$
 $f$ est une fonction du type $\mathbb{R}^{3}\to \mathbb{R}^{3}$
-et peut donc être représenté par la matrice $A= \begin{pmatrix} \alpha _{1} &\alpha_{2} &\alpha _{3} \\ \beta _{1} &\beta_{2} &\beta _{3} \\\delta _{1} &\delta_{2} &\delta _{3} \end{pmatrix}$ dans la base canonique. Cela nous sera pratique plus tard, car les matrices sont plus facile à manipuler que les applications linéaires. En regle generale,pour la matrice $M^{n\times p}$ de l'application linéaire, on a $n = dim(Im(f))$ et $p$ le nombre de paramêtres de $f$. On note: 
+et peut donc être représenté par la matrice $A= \begin{pmatrix} \alpha _{1} &\alpha_{2} &\alpha _{3} \\ \beta _{1} &\beta_{2} &\beta _{3} \\ \delta _{1} &\delta_{2} &\delta _{3} \end{pmatrix}$ dans la base canonique. 
+Cela nous sera pratique plus tard, car les matrices sont plus facile à manipuler que les applications linéaires. En regle generale,pour la matrice $M^{n\times p}$ de l'application linéaire, on a $n = dim(Im(f))$ et $p$ le nombre de paramêtres de $f$. On note: 
 $$y = f(x)$$
 $$Y =AX$$
 ### Representation de f dans une base quelconque
@@ -21,6 +22,6 @@ La representation de $f$ dans une base quelconque se fait de telle manière:
 ## Application de rang 1 
 Soit $f:\mathbb{R} \to \mathbb{R}$ linéaire de matrice $A$ en base canonique.
 Si f est de rang 1, alors
-$$\boxed{f\circ f = \delta f, \ ou\ \delta = Tr(f)}$$
+$$\boxed{f\circ f = \delta f, \ ou\\ \delta = Tr(f)}$$
 Voir la [[Trace]]
 Si $\delta =1$, oalors f est une [[Projections dans un espace vectoriel]]. __Une application de rang 1 et de Trace 1 est une projection__

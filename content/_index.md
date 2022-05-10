@@ -1,7 +1,7 @@
 ---
 title: 🪴 My digital Garden
 ---
-
+C'est la page que j'utilise pour stocker mes notes de cours à l'EPFL
 1. Extremely fast full-text search by pressing `Ctrl` + `k`
 2. Customizable and hackable design based on Hugo
 3. Automatically generated backlinks, link previews, and local graph
