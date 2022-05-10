@@ -44,7 +44,7 @@ Ainsi, La matrice de changement de base _permet d'exprimer $V$ dans la base B à
 ## Changement de base
 (Je ne suis pas sur de mon bullshit)
 On peut voir que pour changer de base il faut faire l'inverse de l'expression d'un vecteur dans une autre base, Car $v\times b = vPP^{-1}b =P v\times b'$. On voit donc que $b' = P^{-1}b$. En règle generale:
-$$B = \{ v_{1}, v_{2} \} = \{ v_{1}', v_{2}' \}P^{-1}$$
+$$B = (v_{1}, v_{2}) = \{ v_{1}', v_{2}' \}P^{-1}$$
 et
 $$ B' = \{ v_{1}', v_{2}' \} = \{ v_{1}, v_{2} \}P$$
 ## Remarque:
