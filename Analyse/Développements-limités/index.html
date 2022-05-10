@@ -1,0 +1,85 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="#scm #man #ba1 #analyse
+   L&rsquo;dée est developper une fonction comme la somme de [[Polynomes]] de puissances de + en + élevées"><title>🪴 Quartz 3.2</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://duckstroll.github.io/quartz//icon.png><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet><link href=https://duckstroll.github.io/quartz/styles.788cb0267a54fd434989923e0ecfcd7c.min.css rel=stylesheet><script src=https://duckstroll.github.io/quartz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://duckstroll.github.io/quartz/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
+<script>const BASE_URL="https://duckstroll.github.io/quartz/",fetchData=Promise.all([fetch("https://duckstroll.github.io/quartz/indices/linkIndex.be95edd947cebfcc315c080067bae604.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://duckstroll.github.io/quartz/indices/contentIndex.b08ffb81e3c8f1a9ededb55d7aba3d58.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n}))</script><script type=module>
+    import { attachSPARouting } from 'https:\/\/duckstroll.github.io\/quartz\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
+    
+    const draw = () => {
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(draw)
+      
+      container.textContent = ""
+
+      drawGraph(
+        "https://duckstroll.github.io/quartz",
+        [{"/moc":"#4388cc"}],
+         -1 ,
+         true ,
+         false ,
+         true 
+      );
+
+      
+      initPopover(
+        "https://duckstroll.github.io/quartz",
+         true ,
+         true 
+      )
+      
+      
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+    attachSPARouting(draw);
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://duckstroll.github.io/quartz/js/search.06935f6a9c1dd79aa33fe3a725067dbc.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://duckstroll.github.io/quartz/>🪴 Quartz 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg><div class=spacer></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><p class=meta>Last updated Unknown</p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#unicité-du-développement-limité>Unicité du développement limité:</a></li></ol><ol><li><a href=#preuve>Preuve</a></li><li><a href=#exemples>Exemples</a></li></ol></nav></details></aside><p>#scm #man #ba1 #analyse</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc></code></pre></td></tr></table></div></div><p>L&rsquo;dée est developper une fonction comme la somme de <a class="internal-link broken">Polynomes</a> de puissances de + en + élevées</p><a href=#définition><h1 id=définition><span class=hanchor arialabel=Anchor># </span>Définition</h1></a><p>Prenons une fonction $f:\mathbb{R} \to \mathbb{R}$.
+Si $f$ est n fois dérivable, Alors le développement limité de $f$ à l&rsquo;ordre n autour $x_0$ est un polynome
+$$(\frac{d^k}{dx}dl^n)(x_0)= (\frac{d^k}{dx}f)(x_0)$$</p><a href=#unicité-du-développement-limité><h2 id=unicité-du-développement-limité><span class=hanchor arialabel=Anchor># </span>Unicité du développement limité:</h2></a><p>Soit $f:\mathbb{R}\to\mathbb{R}$ une foncrion n fpis dérivable et soit $x_o \in I \subset Def_f$, ou $I$ est ouvert (Pour la <a class="internal-link broken">Dérivation</a>). Alors $dl^n(x)$ est unique et:
+$$dl^n_{x_0} (x)=f(x_0) + f&rsquo;(x_o)(x-x_0)+\frac{f&rsquo;&rsquo;(x_0)}{2}(x-x_0)^2+&mldr; +\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$
+Preuve: $dl^n(x)$ est manifestement un polynome de degré n. si $0 \leq k \le n,$ alors
+$$\frac{d^k}{dx^k}(dl^n_{x_0,f}(x_0))= \sum^n_{j=k} \left. \frac{f^{i}(x_0)}{j!}(x-x_0)^{j-k}\frac{j!}{(j-k)!} \right|<em>{x_0}= \frac{f^{(k)}x_0}{k!}=f^{(k)}(x_0)$$
+Supposons que P(x) soit un polynome de degré n tq Pour tout $k \in { 0,1,..,n}, P^{(k)}(x_0)= f^{k}(x_0)$. On a donc que $P(x)-dl^n(x)$ est un polynome de degré n avec des dérivées nulles en $x_0$. Donc, $P(x)-dl^n</em>{x_0}(x)\equiv0 \Rightarrow P(x) = dl^n_{x_0}(x)$
+Calculons Le dl de ln autour de 1.
+On a $dl^n_{ln,1}=0, ln^{(1)}(1)=1$
+$dl^n_{ln,1}=(x-1) -\frac{(x-1)^2}{2}+\frac{(x-1)^3}{3}-\frac{(x-1)^4}{4}&mldr;$
+$\mathbb{R}\ni x \mapsto \exp(x):=ln^{-1}(x)$
+$\frac{1}{\frac{d}{dx}(exp(x))}=exp(x)$
+$\Rightarrow dl^n_{exp,0}(x)=1 +x+\frac{x^2}{2}&mldr;+\frac{x^n}{n!}$
+$\Rightarrow exp(1) = e = 2+\frac{1}{2}+\frac{1}{3!}+\frac{1}{4!}+\frac{1}{5!}+\frac{1}{6!}$</p><a href=#exemples-communs-de-developpements-limités><h1 id=exemples-communs-de-developpements-limités><span class=hanchor arialabel=Anchor># </span>Exemples communs de developpements limités</h1></a><p>DL de $ln(x)$ autour de $x_0$:
+$$ln(x) = \sum_1^n(-1)^{k-1}\frac{(x-x_0)^k}{k}$$
+DL de $exp(x):$</p><a href=#consequences-du-théorème-des-acroissement-finis><h1 id=consequences-du-théorème-des-acroissement-finis><span class=hanchor arialabel=Anchor># </span>Consequences du <a href=/quartz/Analyse/Th%C3%A9or%C3%A8me-des-acroissement-finis rel=noopener class=internal-link data-src=/quartz/Analyse/Th%C3%A9or%C3%A8me-des-acroissement-finis>Théorème des acroissement finis</a></h1></a><p>Rappel du thm: $f(b)-f(a)= (b-a)f&rsquo;(x) \ \forall x\in ]a,b[$</p><p>Soit $f:\mathbb{R}\to\mathbb{R}, f\in C^{n+1}$ sur un intervalle ouvert I.</p><p>Soient $x_o,x\in I , x_o\neq x$.
+Alors $f(x)= dl^n_{f,x_o}(x)+R^n_{f,x_0}(x)$ où $R^n_{f,x_0}(x)=\frac{(x-x0)^{n+1}}{(n+1)!}f^{(n+1)}(\xi)\ \ \forall \xi\in ]a,b[$
+On va utiliser ce resultat afin de verifier qu&rsquo;une fonction converge vers son développement limité en montrant que le reste $R$ tends vers 0 quand n tends vers l&rsquo;infini.</p><a href=#preuve><h2 id=preuve><span class=hanchor arialabel=Anchor># </span>Preuve</h2></a><p>Pour $y \in [x_0,x]$, On pose la fonction $F(y):=f(x)-dl^n_{f,y}-c(x-y)^{n+1}$ où $c = \frac{1}{(x-x_0)^{n+1}}[f(x)-dl^n_{f,x_0}]$
+Listons les propriétés de $F$</p><ol><li>$F(y)$ est continue sur $[x_0,x]$</li><li>$F(x)=0$</li><li>$F(x_0)=0$</li><li>$F$ est dérivable sur $]x_0,x[$, en effet</li></ol><p>$$F&rsquo;(y)= \frac{d}{dy}(-dl^n_{f,y}(x))+c(n+1)(x-y)^n$$
+$$= -\sum^n_{k=0}f^{(k+1)}(y)\frac{(x-y)^k}{k!}+\sum^n_{k=0}f^{(k)}(y)k\cdot\frac{(x-y)^{k-1}}{k!}+ c(n+1)(x-1)^n$$
+On supprime le terme précedant
+$$=f^{(n+1)}(y)\frac{(x-y)^n}{n!}+c(n+1)(x-y)^n$$
+Par le <a class="internal-link broken">Théorème de Rolle</a>, Il existe $\xi \in ]x_0,x[ \text{ t.q. } F&rsquo;(\xi)=0$
+$\Rightarrow f^{(n+1)}(\xi)\frac{x-\xi}{n!}=c(n+1)(x-\xi)^n$
+$\Rightarrow c= \frac{f^{(n+1)}(\xi)}{(n+1)!}\Rightarrow R^n_{f,x_0}=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$</p><a href=#exemples><h2 id=exemples><span class=hanchor arialabel=Anchor># </span>Exemples</h2></a><p>$1)$Prenons f = Arctan(x)
+on a $\forall n \in \mathbb{N}^*$
+$\arctan ^n(x)= \frac{sgn(-x)^{n+1}}{(\sqrt{1+x^2})^n}sin(nArcsin(\frac{1}{\sqrt{1+x^2}}))$
+On a donc que $|Arctan(x)-dl^n_{arctan,0}|=\frac{(x-x_0)^{n+1}}{(n+1)!}\frac{n!}{(\sqrt{1+\xi^2})^{n+1}}$
+avec $\xi \in \ ]x_0,x[$
+$\Rightarrow |R^n_{arctan,0}|= \frac{1}{n+1}\frac{|x|^{n+1}}{\sqrt{1+\xi^2}^{n+1}}|sin((n+1)\theta)|&lt; 1/(n+1)$
+$\Rightarrow \forall x \in[-1,1], arctan(x) =\underset{n \rightarrow\infty}{\lim}dl^n_{arctan,0}(x)$
+$\Rightarrow \boxed{\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\dots}$
+$2)$ $ln^{(n)}(x)= \frac{(-1)^{n+1}}{x^n}(n+1)!$ $\forall n \geq 1$
+$\Rightarrow |ln(x)-dl^n_{ln,1}(x)|=\frac{1}{|\xi^{n+1}|}\frac{1}{n+1}|x-1|^{n+1}$.Pour $x \in [1,2]$, $R&lt; \frac{1}{n+1}$ et $ln(x) = \underset{n \rightarrow\infty}{\lim}dl^n_{ln,1}$
+$\boxed{ln(2)=1- \frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}}$
+3)$exp(x)$ $\forall n\in \mathbb{N}\ exp^{(n)}(x)= exp(x)$
+$|R^n_{exp,0}|&lt; \frac{1}{n+1}|x|^{n+1}exp(\xi)\longrightarrow0(n\longrightarrow \infty)$</p><p>Remarque: Une fonction $f:\mathbb{R} \mapsto \mathbb{R}, def(f) = \mathbb{R}$ et infiniment dérivable pour tout $x,x_o$ est dite entière. L&rsquo;utilité des fonctions entières sont qu&rsquo;elles peuvent être étendue au dela des nombres réels. $e^{i\pi}+1=0$ se repose sur cela</p><blockquote><p>[!WARNING]
+Il existe des fonctions dérivable à l&rsquo;infini
+tel que $\underset{n \rightarrow\infty}{\lim}dl^n_{f,x_0}\neq f(x)$</p></blockquote><p>COmment montrer que $\forall x \in ]0,2[ ln(x)= \underset{n \rightarrow\infty}{\lim}dl^n_{ln,0}$
+$ln(x)=\int_1^x\frac{1}{t}dt= \int^x_1\frac{1}{1-(1-t)}dt=\int_1^x \sum_{n\geq0}(1-t)^n dt=dl^{n+1}_{ln,1}+ \int_1^x \frac{(1-t)^{(n+1)}}{t}dt$</p></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://duckstroll.github.io/quartz/js/graph.0eb0c81d58a703569f31b6053242af38.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>

@@ -1,0 +1,87 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="#analyse #man
+Introduction (Note: J&rsquo;ai utilisé P au lieu de $\Gamma$ plusieurs fois) On considère le plan muni d&rsquo;un espace (0, $e_{1}, e_{2}$)."><title>🪴 Quartz 3.2</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://duckstroll.github.io/quartz//icon.png><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet><link href=https://duckstroll.github.io/quartz/styles.788cb0267a54fd434989923e0ecfcd7c.min.css rel=stylesheet><script src=https://duckstroll.github.io/quartz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://duckstroll.github.io/quartz/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
+<script>const BASE_URL="https://duckstroll.github.io/quartz/",fetchData=Promise.all([fetch("https://duckstroll.github.io/quartz/indices/linkIndex.be95edd947cebfcc315c080067bae604.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://duckstroll.github.io/quartz/indices/contentIndex.b08ffb81e3c8f1a9ededb55d7aba3d58.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n}))</script><script type=module>
+    import { attachSPARouting } from 'https:\/\/duckstroll.github.io\/quartz\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
+    
+    const draw = () => {
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(draw)
+      
+      container.textContent = ""
+
+      drawGraph(
+        "https://duckstroll.github.io/quartz",
+        [{"/moc":"#4388cc"}],
+         -1 ,
+         true ,
+         false ,
+         true 
+      );
+
+      
+      initPopover(
+        "https://duckstroll.github.io/quartz",
+         true ,
+         true 
+      )
+      
+      
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+    attachSPARouting(draw);
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://duckstroll.github.io/quartz/js/search.06935f6a9c1dd79aa33fe3a725067dbc.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://duckstroll.github.io/quartz/>🪴 Quartz 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg><div class=spacer></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><p class=meta>Last updated Unknown</p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#symetries-déductibles-de-la-parité-des-fonction-vectoriellefonctions-coordonnées>Symetries déductibles de la parité des [[Fonction vectorielle|fonctions coordonnées]]</a></li><li><a href=#points-doubles>Points doubles</a></li><li><a href=#points-stationnaires>Points stationnaires</a></li><li><a href=#autres-points-remarquables>Autres points remarquables</a></li><li><a href=#branches-infinies>Branches Infinies</a></li></ol><ol><li><a href=#le-folium-de-descartes>Le Folium de Descartes</a></li><li><a href=#equations-paramétriques-du-limacon>Equations paramétriques du limacon</a></li></ol></nav></details></aside><p>#analyse #man</p><a href=#introduction><h1 id=introduction><span class=hanchor arialabel=Anchor># </span>Introduction</h1></a><p>(Note: J&rsquo;ai utilisé P au lieu de $\Gamma$ plusieurs fois)
+On considère le plan muni d&rsquo;un espace (0, $e_{1}, e_{2}$).</p><a href=#définition><h1 id=définition><span class=hanchor arialabel=Anchor># </span>Définition</h1></a><p>On appelle <em>arc parametré</em> la donnée d&rsquo;un internvalle $I \in \mathbb{R}$ et d&rsquo;une fonction de $I \in \mathbb{R}$.
+$$I \subset \mathbb{R} \mapsto\mathbb{R}^{2}$$
+$$t\mapsto \vec{r(t)}= \vec{OM}$$
+La fonction $t\mapsto \vec{r(t)}$ est appelée <a href=/quartz/Analyse/Fonction-vectorielle rel=noopener class=internal-link data-src=/quartz/Analyse/Fonction-vectorielle>Fonction vectorielle</a> et les fonction scalaires $x(t)$ et $y(t)$ sont les fonctions coordonées de $\vec{r(t)}$
+L&rsquo;ensemble $P:{M(t)\in \mathbb{R}^{2}|\vec{OM(t)}= P(t), t\in I }$ est la trajectoire de l&rsquo;arc paramétré. Intuitivement</p><a href=#quelques-éléments-de-létude-dun-arc-paramétrique><h1 id=quelques-éléments-de-létude-dun-arc-paramétrique><span class=hanchor arialabel=Anchor># </span>Quelques éléments de l&rsquo;étude d&rsquo;un arc paramétrique</h1></a><a href=#symetries-déductibles-de-la-parité-des-fonction-vectoriellefonctions-coordonnées><h2 id=symetries-déductibles-de-la-parité-des-fonction-vectoriellefonctions-coordonnées><span class=hanchor arialabel=Anchor># </span>Symetries déductibles de la parité des <a href=/quartz/Analyse/Fonction-vectorielle rel=noopener class=internal-link data-src=/quartz/Analyse/Fonction-vectorielle>fonctions coordonnées</a></h2></a><ol><li>si $x(t)$ est pair et y(t) est impair alors P(t) est symetrique par rapport à 0x</li><li>si $x(t)$ est impair et y(t) est pair aplors P est symetrique autours de l&rsquo;axe Oy</li><li>SI x(t) et y(t) sont impaires, alors P sera symetrique par rapport à 0 M(t) = -M(-t)</li></ol><a href=#points-doubles><h2 id=points-doubles><span class=hanchor arialabel=Anchor># </span>Points doubles</h2></a><p>A est un point double de $\Gamma$ ssi $\exists t_{1}&lt;t_{2}\in I$ tel que $A \equiv M(t1) \equiv M(t2)$</p><a href=#points-stationnaires><h2 id=points-stationnaires><span class=hanchor arialabel=Anchor># </span>Points stationnaires</h2></a><p>$M(t_{0})$ est un point stationnaire de $\Gamma$ ssi la derivée de $\vec{r} = 0$. Autrement dit, ssi $\dot{x}(t)$ <strong>et</strong> $\dot{y}(t) = 0$ dans ce cas on utilise B.H pour trouver la pente de la tangeante.</p><a href=#autres-points-remarquables><h2 id=autres-points-remarquables><span class=hanchor arialabel=Anchor># </span>Autres points remarquables</h2></a><p>si $y&rsquo;(t0) =0$ et $x&rsquo;(t0) \neq 0,\Gamma$ admet en $t_{0}$ un point à tengeante horizontale.
+$x&rsquo;(t0) =0$ et $y&rsquo;(t0) \neq 0$
+M(t0) admet une tangente verticale et $m = \infty$</p><a href=#branches-infinies><h2 id=branches-infinies><span class=hanchor arialabel=Anchor># </span>Branches Infinies</h2></a><p>$\Gamma$ admet une branche infinie lorsque $t \to t0$ (t0 infini ou fini) si r(t) = +$\infty$(t->t0).
+Autreement dit si x(t) ou y(t) tendent vers l&rsquo;infini</p><p>3 cas peuvent se présenter:
+x=x0(t->t0)et $y= \pm\infty(t\to t0)$
+alors $\Gamma$ admet une <a href=/quartz/Analyse/asymptote rel=noopener class=internal-link data-src=/quartz/Analyse/asymptote>asymptote</a> verticale</p><p>y=y0(t->t0)et $x= \pm\infty(t\to t0)$
+alors $\Gamma$ admet une <a href=/quartz/Analyse/asymptote rel=noopener class=internal-link data-src=/quartz/Analyse/asymptote>asymptote</a> horizontale.</p><p>$y=\pm\infty(t \to t0)$et $x= \pm\infty(t\to t0)$
+alors $\Gamma$ admet une eventuelle <a href=/quartz/Analyse/asymptote rel=noopener class=internal-link data-src=/quartz/Analyse/asymptote>asymptote</a> oblique $y = mx+h$ m la pente instantanée x/y
+au temps t0 .</p><a href=#exemple-detude-dun-arc--paramétré><h1 id=exemple-detude-dun-arc--paramétré><span class=hanchor arialabel=Anchor># </span>Exemple d&rsquo;Etude d&rsquo;un arc paramétré</h1></a><a href=#le-folium-de-descartes><h2 id=le-folium-de-descartes><span class=hanchor arialabel=Anchor># </span>Le Folium de Descartes</h2></a><p>$$\Gamma : \begin{cases} x(t)=\frac{3t}{1+t^3} \\y(t) =\frac{3t^2}{1+t^3}&\end{cases}$$
+x(t) et y(t) ne sont ni périodiques, ni paires ni impaires.
+On doit faire l&rsquo;étude sur tout le Ddef</p><ul><li>Limites aux points frontières</li></ul><p>$Ddef = ]-\infty, -1 [\cup]-1, +\infty[$
+Lorsque $t \to \pm \infty$
+x(t)-> 0 et y(t)->0
+Donc M(t) tends vers l&rsquo;origine
+Lorsque $t \to -1$
+$x(t)= \pm \infty(t\to -1^{\pm})$
+$y(t)= \pm \infty(t\to -1^{\pm})$
+On recherche une <a href=/quartz/Analyse/asymptote rel=noopener class=internal-link data-src=/quartz/Analyse/asymptote>asymptote</a> oblique.
+$\frac{y(t)}{x(t)}(t\to -1)=-1$
+$y(t)-(-1)x(t) \underset{t \rightarrow-1}{\lim}= -1$</p><ul><li>Derivées</li></ul><p>$\dot{x(t)}=3\frac{1-2t^3}{(1+t^3)^2}$
+On fait un tableau avec les signes et les 0 de $\dot{x}$
+$\dot{y(t)}=3\frac{t(2-t^3)}{(1+t^3)^2}$
+On fait un tableau avec les signes et les 0 de $\dot{y}$</p><ul><li>Points remarquables</li></ul><p>On regarde ou $\dot{y}$ et $\dot{x}$ = 0
+Pas de 0 commun à $\dot{y}$ et $\dot{x}$ donc on a pas de points ststionnaires
+en t = 0: (0,0 est un point à tangeante horizontale et tangeante verticale)
+en $t = \sqrt[3]{1/2}$ $(\sqrt[3]{4},\sqrt[3]{2})$ est un point à tangeante verticale
+en $t = \sqrt[3]{2}$ $(\sqrt[3]{2},\sqrt[3]{4}$ est un point à tangeante horizontale</p><table><thead><tr><th>t</th><th>$-\infty$</th><th></th><th style=text-align:left>-1</th><th style=text-align:left></th><th style=text-align:left>0</th><th style=text-align:left></th><th>$t = \sqrt[3]{1/2}$</th><th></th><th>$t = \sqrt[3]{2}$</th><th></th><th style=text-align:left>$\infty$</th></tr></thead><tbody><tr><td>$\dot x$</td><td>+</td><td>+</td><td style=text-align:left></td><td style=text-align:left>+</td><td style=text-align:left></td><td style=text-align:left>+</td><td>0</td><td>-</td><td></td><td>-</td><td style=text-align:left></td></tr><tr><td>$x$</td><td>0</td><td>0-> $\inf$</td><td style=text-align:left></td><td style=text-align:left>$-\inf$->0</td><td style=text-align:left>0</td><td style=text-align:left></td><td>$\sqrt[3]{4}$</td><td></td><td>$\sqrt[3]{2}$</td><td>->0</td><td style=text-align:left></td></tr><tr><td>$\dot y$</td><td>-</td><td>-</td><td style=text-align:left></td><td style=text-align:left>-</td><td style=text-align:left>0</td><td style=text-align:left>+</td><td>+</td><td>+</td><td>0</td><td>-</td><td style=text-align:left></td></tr><tr><td>$y$</td><td>0</td><td>0-> -$\inf$</td><td style=text-align:left></td><td style=text-align:left>$+\inf$->0</td><td style=text-align:left>0</td><td style=text-align:left>&ndash;></td><td>$\sqrt[3]{2}$</td><td></td><td>$\sqrt[3]{4}$</td><td>->0</td><td style=text-align:left>0</td></tr><tr><td>Avec ces infos on peut tracer un graphe</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>x^3+y^3 = 3xy</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><a href=#equations-paramétriques-du-limacon><h2 id=equations-paramétriques-du-limacon><span class=hanchor arialabel=Anchor># </span>Equations paramétriques du limacon</h2></a><p>b) Le Limacon de pascal
+Soit $\gamma$ le cercle de centre 0 et de rayon 1, A(2,0) et $P \in\gamma$
+Soientd la tangeante à $\gamma$ en P
+M la projection de A sur d.
+Le lien de M lorsque P décrit $\gamma$ est le limacon de pascal</p><ul><li><p>$P \in\gamma$ : P(cos(t), sin(t))</p></li><li><p>M(x,y)$\in d: \vec{PM}\perp \vec{OP}$</p></li><li><p>$\vec{PM}\cdot \vec{OP} = 0 \Leftrightarrow x\cos(t)+ y\sin(t) =1$</p></li><li><p>$M :\begin{cases}
+x\cos(t)+ y\sin(t) = 1
+\ x\sin(t)- y\cos(t) = 2sin(t)
+\end{cases}$</p></li></ul><p>On explicite x et y</p><ul><li>$\Gamma:\begin{cases}
+x(t) = cos(t + 2 \sin^2(t))
+\y(t) = sin(t)-sin(2t)
+\end{cases}$</li></ul><p>Marche a suivre pour l&rsquo;etude de $\Gamma$:</p><ol><li>calculer la periodicité</li><li>calculer la parité</li><li>Trouver le domaine d</li><li>Limites aux points frontières</li><li>Calcul des dérivées</li><li>Faire un tableau de signes avec les dérivées et trouvr les 0</li><li>Trouver les points remarquables</li><li>Calculer les tangeantes et asymptotes grace aux points remarquables</li><li>Ecrire un tableau avec toutes les informations precedentes</li><li>Dessiner un graph</li></ol></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://duckstroll.github.io/quartz/js/graph.0eb0c81d58a703569f31b6053242af38.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>

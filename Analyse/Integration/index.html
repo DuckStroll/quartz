@@ -1,0 +1,76 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="#ba1 #man #analyse
+Calcul Intégral Somme de Riemann Soit $f$ [[Continuité|continue]] sur $[a,b],(a<b)$. On considère le domaine $D$ du plan, limité par $y=0,y=f(x), x=a,x=b$ L&rsquo;aire analytique de D est positive de D est positive si $f(x)\geq 0$ et négative si $f(x) \leq 0$ On cherceh à définire l&rsquo;aire analytique de D."><title>🪴 Quartz 3.2</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://duckstroll.github.io/quartz//icon.png><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet><link href=https://duckstroll.github.io/quartz/styles.788cb0267a54fd434989923e0ecfcd7c.min.css rel=stylesheet><script src=https://duckstroll.github.io/quartz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://duckstroll.github.io/quartz/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
+<script>const BASE_URL="https://duckstroll.github.io/quartz/",fetchData=Promise.all([fetch("https://duckstroll.github.io/quartz/indices/linkIndex.be95edd947cebfcc315c080067bae604.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://duckstroll.github.io/quartz/indices/contentIndex.b08ffb81e3c8f1a9ededb55d7aba3d58.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n}))</script><script type=module>
+    import { attachSPARouting } from 'https:\/\/duckstroll.github.io\/quartz\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
+    
+    const draw = () => {
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(draw)
+      
+      container.textContent = ""
+
+      drawGraph(
+        "https://duckstroll.github.io/quartz",
+        [{"/moc":"#4388cc"}],
+         -1 ,
+         true ,
+         false ,
+         true 
+      );
+
+      
+      initPopover(
+        "https://duckstroll.github.io/quartz",
+         true ,
+         true 
+      )
+      
+      
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+    attachSPARouting(draw);
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://duckstroll.github.io/quartz/js/search.06935f6a9c1dd79aa33fe3a725067dbc.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://duckstroll.github.io/quartz/>🪴 Quartz 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg><div class=spacer></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><p class=meta>Last updated May 10, 2022</p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#somme-de-riemann>Somme de Riemann</a><ol><li><a href=#cas-particulier-somme-de-darboux>Cas particulier: Somme de Darboux</a></li></ol></li><li><a href=#intégrabilité>Intégrabilité</a><ol><li><a href=#théorèmesans-démonstrationsparce-quon-est-nulmais-en-vrai-on-la-fait-au-ba1>Théorème(sans démonstrations)(Parce qu&rsquo;on est nul)(mais en vrai on l&rsquo;a fait au ba1):</a></li></ol></li><li><a href=#quelques-consequeuences-de-la-définition>Quelques consequeuences de la définition</a></li><li><a href=#théorème-de-la-moyenne>Théorème de la moyenne</a><ol><li><a href=#démonstation>Démonstation</a></li></ol></li></ol><ol><li><a href=#integration-par-parties>Integration par parties</a></li><li><a href=#changement-de-variable>Changement de variable</a><ol><li><a href=#quelques-changements-de-variables-usuels>Quelques changements de variables usuels</a></li></ol></li></ol></nav></details></aside><p>#ba1 #man #analyse</p><a href=#calcul-intégral><h1 id=calcul-intégral><span class=hanchor arialabel=Anchor># </span>Calcul Intégral</h1></a><a href=#somme-de-riemann><h2 id=somme-de-riemann><span class=hanchor arialabel=Anchor># </span>Somme de Riemann</h2></a><p>Soit $f$ <a href=/quartz/Analyse/Continuit%C3%A9 rel=noopener class=internal-link data-src=/quartz/Analyse/Continuit%C3%A9>continue</a> sur $[a,b],(a&lt;b)$. On considère le domaine $D$ du plan, limité par $y=0,y=f(x), x=a,x=b$
+L&rsquo;aire analytique de D est positive de D est positive si $f(x)\geq 0$ et négative si $f(x) \leq 0$
+On cherceh à définire l&rsquo;aire analytique de D.
+On patage de facon arbitraire $[a,b]$ en $n$ intervalles $[x_{k-1}, x_k],1\leq k\leq n$. On choisit arbitrairement un abscisse $f(t_k)$ dans chaque intervalle $[x_{k-1}, x_k],x_k],1\leq k\leq n$.
+On créé donc un rectangle d&rsquo;aire $f(t_k)\cdot (x_k-x_{k-1})$
+La somme $\sum^n_{k=1} f(t_k)\cdot \Delta x_k$ est la somme des aires analytiques du rectangle de longueur $\Delta x_k$et de hauteur $f(t_k)$ C&rsquo;est une approximation de l&rsquo;aire cherchée, d&rsquo;autant plus lque les $x_0$ sont petits.</p><p>Cette Somme est appelée <strong>Somme de Riemann</strong> de f sur $[a,b]$. Elle dépend du partage de $[a,b]$ et du choix de $t_k$</p><a href=#cas-particulier-somme-de-darboux><h3 id=cas-particulier-somme-de-darboux><span class=hanchor arialabel=Anchor># </span>Cas particulier: Somme de Darboux</h3></a><p>Associé à une partition de $[a,b]$, on définit deux sommes de Riemann particulière:
+La somme de Darboux inférieure
+$$s_n =\sum^n_{k=1}m_k \Delta x_k\text{ ou mk est le min de f sur }[x_{k-1},x_k]1\leq k\leq n$$
+La somme de Darboux superieure
+$$S_n =\sum^n_{k=1}m_k \Delta x_k\text{ ou mk est le max de f sur }[x_{k-1},x_k]1\leq k\leq n$$</p><a href=#intégrabilité><h2 id=intégrabilité><span class=hanchor arialabel=Anchor># </span>Intégrabilité</h2></a><p>si pour $n\to \infty$ tous les $\Delta x_k \to 0$ et si $\sum^n_{k=1}f(t_k) \Delta x_k$ existe indépendemment du choix de $t_k \in [x_{k-1},x_k]$ et du partage de $[a,b]$, aolrs f est dit <strong>intégrable au sens de Riemann</strong> et la limite est appelée l&rsquo;intégrale de f sur $[a,b]$.
+On note cette limite
+$$\int^a_bf(x)dx$$
+$$\boxed{\int^a_bf(x)dx=\underset{n \rightarrow \infty}{\lim}\sum^n_{k=1}f(t_k) \Delta x_k}$$
+L&rsquo;intégrale définie de $f$ sur $[a,b]$ est par définition l&rsquo;arc analytique sur le domaine D.</p><a href=#théorèmesans-démonstrationsparce-quon-est-nulmais-en-vrai-on-la-fait-au-ba1><h3 id=théorèmesans-démonstrationsparce-quon-est-nulmais-en-vrai-on-la-fait-au-ba1><span class=hanchor arialabel=Anchor># </span>Théorème(sans démonstrations)(Parce qu&rsquo;on est nul)(mais en vrai on l&rsquo;a fait au ba1):</h3></a><p>Si $f\in C^0_{[a,b]}$ alors f est intégrable au sens de Riemann.</p><a href=#quelques-consequeuences-de-la-définition><h2 id=quelques-consequeuences-de-la-définition><span class=hanchor arialabel=Anchor># </span>Quelques consequeuences de la définition</h2></a><ol><li>$$\int^a_af(x)dx=0$$</li><li>$$\int^b_af(x)dx+\int^c_bf(x)dx=\int^c_af(x)dx$$</li><li>$$\int^a_bf(x)dx= -\int^b_af(x)dx$$</li><li>$$\int^b_a\delta f(x)dx =\delta\int^b_a f(x)dx$$</li><li>$$\int^b_a[f(x)+g(x)]dx= \int^b_a f(x)dx+\int^b_a g(x)dx$$</li><li>Si $a&lt;b \ et \ f(x) \leq g(x), \forall x \in [a,b]$ alors $\int f(x)dx\leq\int g(x)dx$</li><li>$|\int f(x)dx|\leq\int|f(x)|dx$</li><li>Parité: Si f est paire,$\int^a_{-a}f(x)dx=2\int^a_0$</li></ol><a href=#théorème-de-la-moyenne><h2 id=théorème-de-la-moyenne><span class=hanchor arialabel=Anchor># </span>Théorème de la moyenne</h2></a><p>a) Thm de la moyenne
+Soit $f$ continue sur $[a,b]$
+$\exists c \in [a,b] \ tq \ \int^b_af(x)dx= (b-a)\cdot f(c)$</p><a href=#démonstation><h3 id=démonstation><span class=hanchor arialabel=Anchor># </span>Démonstation</h3></a><p>f continue sur $[a,b]$ donc atteint son min =m et son max = M $m \leq f(x) \leq M$
+or $\int^b_a k \cdot dx=k\cdot (b-a)$
+D&rsquo;ou $\int^b_am\cdot dx \leq \int^b_af(x)\cdot dx \leq \int^b_aM\cdot dx$
+Donc $m \leq \frac{\int^b_af(x)\cdot dx}{b-a} \leq M$
+Grace au <a href=/quartz/Analyse/Th%C3%A9or%C3%A8me-de-la-valeur-interm%C3%A9diaire rel=noopener class=internal-link data-src=/quartz/Analyse/Th%C3%A9or%C3%A8me-de-la-valeur-interm%C3%A9diaire>Théorème de la valeur intermédiaire</a> on peut dire $\frac{\int^b_af(x)\cdot dx}{b-a} =f(c)$ et$\int^b_af(x)\cdot dx=(b-a)\cdot f(c)$</p><a href=#outils-dintegration><h1 id=outils-dintegration><span class=hanchor arialabel=Anchor># </span>Outils d&rsquo;integration</h1></a><a href=#integration-par-parties><h2 id=integration-par-parties><span class=hanchor arialabel=Anchor># </span>Integration par parties</h2></a><p>Soient $u = u(x)$ et $v= v(x)$ deux fonctions dérivables.
+$(u\cdot v)&rsquo;= u&rsquo; \cdot v + u \cdot v&rsquo;$
+$\int(uv)&lsquo;dx= \int(u&rsquo;v)dx+\int(uv&rsquo;)dx$
+et donc
+$$\int u&rsquo;v\cdot dx = uv -\int uv&rsquo;dx$$</p><a href=#changement-de-variable><h2 id=changement-de-variable><span class=hanchor arialabel=Anchor># </span>Changement de variable</h2></a><p>On change de variable en passant par $x = \phi(t)$
+Si F(x) est une primitive de f(x): F&rsquo;(x) = f(x)
+$$\int F(\phi(t)+C)&lsquo;dt=\int f(\phi (t)\cdot \phi&rsquo;(t)dt$$</p><a href=#quelques-changements-de-variables-usuels><h3 id=quelques-changements-de-variables-usuels><span class=hanchor arialabel=Anchor># </span>Quelques changements de variables usuels</h3></a><p>Si l&rsquo;integrant est fonction de $\sqrt{1-x^2}$et x entre [-1,1], on peut poser $x = sin(t),t = arcsin(x), dx =cos(t)dt$
+On peut aussi poser:
+$x = cos(t), \sqrt{1-x^2}=sin(t),dx =-sin(t)dt$
+ii) Déduits de la relation $cosh^2(t)-sinh^2(t)=1$
+Si l&rsquo;integrale est fonction de $\sqrt{1+x^2}$ on peut poser $x=sinh(t),\sqrt{1+x^2}=cosh(t),dx=cosh(t)$
+si on a $\sqrt{x^2-1}$, on pose $x =cosh(t)\ si \ x \geq 1,x=-cos(t) \ si \ x\leq1$</p></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://duckstroll.github.io/quartz/js/graph.0eb0c81d58a703569f31b6053242af38.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>
