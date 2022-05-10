@@ -16,10 +16,7 @@ On peut prendre tout vecteur v $\in \mathbb{R}^{2}$ comme une somme de scalaire 
 $V = Vect(v1,v2) =  (t_{1}v_{1}+t_{2}v_{2}|t_{1},t_{2}) \in \mathbb{R}$
 Ces vecteurs $v_{1}$ et $v_{2}$ sont des bases s'ils permettent de couvrir tout l'espace vectoriel $\mathbb{R}^{2}$
 On note donc:
-$[V]_{B}= \begin{bmatrix}
-t_{1} \\
-t_{2} \\
-\end{bmatrix}$
+$[V]_{B}= \begin{bmatrix}t_{1} \\t_{2} \\ \end{bmatrix}$
 Notre vecteur est donc exprimé dans la base B = $(v_{1},v_{2})$
 ## Expression d'un vecteur dans une autre base:
 Pour changer de base on veut exprimer notre vecteur dans $B$ vers $B'$ pour cela notons $B' = (v_{1}',v_{2}')$. 
@@ -38,7 +35,8 @@ v_{2}' \
 \begin{pmatrix}
 v_{1} \\
 v_{2} \
-\end{pmatrix}$(Les valeurs sont arrangées en colonnes)
+\end{pmatrix}$ 
+(Les valeurs sont arrangées en colonnes)
 On appelle $P^{}$ la _==Matrice de Changement de base==_ et on appelle sa [[Matrice#Matrice inverse|Matrice inverse]] $P^{-1}$ la _Matrice de changement de coordonées_.
 Pour exprimer $V$ dans la base $B'$ à partir de la base $B$, on a: 
 $$[V]_{B'} = P^{-1} [V]_{B}$$ et $$[V]_{B} =  P[V]_{B'}$$
