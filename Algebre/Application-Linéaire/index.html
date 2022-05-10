@@ -3,7 +3,7 @@ Application linéaires Une application linéaire est un type de fonction $f:\mat
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script src=https://duckstroll.github.io/quartz/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
-<script>const BASE_URL="https://duckstroll.github.io/quartz/",fetchData=Promise.all([fetch("https://duckstroll.github.io/quartz/indices/linkIndex.5961f3490047fba60c00d3a156360e6c.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://duckstroll.github.io/quartz/indices/contentIndex.6b6bf06474af34d11d5766115dd76582.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n}))</script><script type=module>
+<script>const BASE_URL="https://duckstroll.github.io/quartz/",fetchData=Promise.all([fetch("https://duckstroll.github.io/quartz/indices/linkIndex.5961f3490047fba60c00d3a156360e6c.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://duckstroll.github.io/quartz/indices/contentIndex.d4e91394f7b16264ccfa0490adf4faeb.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n}))</script><script type=module>
     import { attachSPARouting } from 'https:\/\/duckstroll.github.io\/quartz\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
     
     const draw = () => {
@@ -50,7 +50,8 @@ $$f(x,y,z)\to (\alpha _{1}x+\alpha _{2}y+\alpha _{3}z,
 \beta _{1}x+\beta _{2}y+\beta _{3}z,
 \gamma _{1}x+\gamma _{2}y+\gamma _{3}z) $$
 $f$ est une fonction du type $\mathbb{R}^{3}\to \mathbb{R}^{3}$
-et peut donc être représenté par la matrice $A= \begin{pmatrix} \alpha <em>{1} &\alpha</em>{2} &\alpha _{3} \ \beta <em>{1} &\beta</em>{2} &\beta _{3} \\delta <em>{1} &\delta</em>{2} &\delta _{3} \end{pmatrix}$ dans la base canonique. Cela nous sera pratique plus tard, car les matrices sont plus facile à manipuler que les applications linéaires. En regle generale,pour la matrice $M^{n\times p}$ de l&rsquo;application linéaire, on a $n = dim(Im(f))$ et $p$ le nombre de paramêtres de $f$. On note:
+et peut donc être représenté par la matrice $A= \begin{pmatrix} \alpha <em>{1} &\alpha</em>{2} &\alpha _{3} \ \beta <em>{1} &\beta</em>{2} &\beta _{3} \ \delta <em>{1} &\delta</em>{2} &\delta _{3} \end{pmatrix}$ dans la base canonique.
+Cela nous sera pratique plus tard, car les matrices sont plus facile à manipuler que les applications linéaires. En regle generale,pour la matrice $M^{n\times p}$ de l&rsquo;application linéaire, on a $n = dim(Im(f))$ et $p$ le nombre de paramêtres de $f$. On note:
 $$y = f(x)$$
 $$Y =AX$$</p><a href=#representation-de-f-dans-une-base-quelconque><h3 id=representation-de-f-dans-une-base-quelconque><span class=hanchor arialabel=Anchor># </span>Representation de f dans une base quelconque</h3></a><p>La representation de $f$ dans une base quelconque se fait de telle manière:</p><a href=#application-de-rang-1><h2 id=application-de-rang-1><span class=hanchor arialabel=Anchor># </span>Application de rang 1</h2></a><p>Soit $f:\mathbb{R} \to \mathbb{R}$ linéaire de matrice $A$ en base canonique.
 Si f est de rang 1, alors
