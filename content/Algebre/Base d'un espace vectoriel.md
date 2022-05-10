@@ -1,3 +1,7 @@
+---
+title: "Base d'un espace vectoriel"
+---
+
 #algebre #ba1 #matrice 
 # Definiton d'une base d'un espace vectoriel
 Une base est une famille de vecteur tel que

@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+title: "Matrice"
 ---
+
 #algebre #ba1 #matrice 
 ```toc
 		style: number

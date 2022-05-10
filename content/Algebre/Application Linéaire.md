@@ -1,3 +1,7 @@
+---
+title: "Application Linéaire"
+---
+
 #algebre #ba1
 # Application linéaires
 Une application linéaire est un type de fonction $f:\mathbb{R}^{n} \to\mathbb{R}^{p}$.

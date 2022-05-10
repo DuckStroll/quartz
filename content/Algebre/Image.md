@@ -1,3 +1,7 @@
+---
+title: "Image"
+---
+
 #ba1 #man #algebre 
 Intuitivement, l'Image correspond à l'ensemble des  "sorties" d'une fonction.
  

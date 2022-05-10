@@ -1,3 +1,6 @@
+---
+title: "Matrice de rotation"
+---
 #man #matrice #algebre 
 # Rotations et réflexions
 Au cours de ce chapiter on visulalisera toujours avec un repère orthonormé direct

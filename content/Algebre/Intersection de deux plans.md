@@ -1,3 +1,7 @@
+---
+title: "Intersection de deux plans"
+---
+
 #algebre #man 
 Prenons 2 [[Sous-Espaces Vectoriels#Plans Vectoriels dans mathbb R 3|Plans vectoriels]] dans $\mathbb{R}^{3}$
 L'intersection sera un plan si $V = \alpha V'$.

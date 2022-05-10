@@ -1,3 +1,7 @@
+---
+title: "Determinant"
+---
+
 #algebre #ba1 #matrice 
 ## Definition et propriétés:
 Toute [[matrice]] carrée $M_{n}$ possède un déterminant.
